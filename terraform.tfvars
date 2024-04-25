@@ -4,7 +4,6 @@ cluster_name = "dev-cluster-1"
 network = "gcp-demos-internal-network"
 region = "europe-central2"
 zone = "europe-central2-a"
-external_ip = "false"
 iam_roles = {
   dataproc_admin  = { "role" : "roles/dataproc.admin"},
   dataproc_worker = { "role" : "roles/dataproc.worker"},
