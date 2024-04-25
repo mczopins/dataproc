@@ -40,13 +40,13 @@ variable "cluster_name" {
 variable "machine_type" {
   type        = string
   description = "Machine Type"
-  default     = "e2-micro"
+  default     = "n2-standard-2"
 }
 
 variable "staging_bucket" {
   type        = string
   description = "Staging bucket"
-  default     = "dataproc-staging-bucket"
+  default     = "mczopinski-dataproc-staging-bucket"
 }
 
 variable "image_version" {
