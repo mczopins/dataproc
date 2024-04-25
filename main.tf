@@ -4,11 +4,6 @@
 #
 ################################################################################################
 
-import {
-  id = "projects/{{var.project_id}}/regions/{{var.region}}/subnetworks/{{var.network}}"
-  to = google_compute_subnetwork.private_subnet
-}
-
 # Enable Google API service
 resource "google_project_service" "dataproc_service" {
   project     = var.project_id
@@ -39,11 +34,6 @@ resource "google_storage_bucket" "this" {
   location      = "EU"
   uniform_bucket_level_access = true
   force_destroy = true
-}
-
-resource "google_compute_subnetwork" "private_subnet" {
-  network                  = google_compute_subnetwork.private_subnet.id
-  private_ip_google_access = true
 }
 
 # Create Dataproc cluster
