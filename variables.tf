@@ -54,7 +54,3 @@ variable "image_version" {
   description = "Image version for cluster nodes"
   default     = "2.0.35-debian10"
 }
-
-variable "external_ip"{
-  type        = bool
-}
