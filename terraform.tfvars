@@ -4,6 +4,7 @@ cluster_name = "dev-cluster-1"
 network = "gcp-demos-internal-network"
 region = "europe-central2"
 zone = "europe-central2-a"
+staging_bucket = "mczopinski-dataproc-staging-bucket"
 iam_roles = {
   dataproc_admin  = { "role" : "roles/dataproc.admin"},
   dataproc_worker = { "role" : "roles/dataproc.worker"},
